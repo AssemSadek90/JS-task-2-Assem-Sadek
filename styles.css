@@ -1,0 +1,8 @@
+div {
+  background-image: url("./assets/unknownCard.jpg");
+  background-size: cover;
+  transition: 200ms;
+}
+img {
+  transition: 200ms;
+}

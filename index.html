@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" async></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="h-svh">
+    <h1 class="max-w-fit mx-auto text-6xl mb-4">Javascript Game</h1>
+    <section id="win-message" class="hidden max-w-fit mx-auto">
+      <h1 class="text-3xl text-center">You win!</h1>
+      <section class="flex space-x-4">
+        <button
+          class="text-xl border border-neutral-200 rounded-2xl p-2"
+          id="play-again"
+        >
+          Play Again
+        </button>
+        <button
+          class="text-xl border border-neutral-200 rounded-2xl p-2"
+          id="finish-game"
+        >
+          Finish Game
+        </button>
+      </section>
+    </section>
+    <section id="card-parent" class="grid grid-cols-8 gap-2 mx-auto my-auto">
+      <div
+        id="card-1-parent"
+        onclick="compareImages('card-1-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-1"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image1"
+        />
+      </div>
+      <div
+        id="card-2-parent"
+        onclick="compareImages('card-2-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-2"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image2"
+        />
+      </div>
+      <div
+        id="card-3-parent"
+        onclick="compareImages('card-3-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-3"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image3"
+        />
+      </div>
+      <div
+        id="card-4-parent"
+        onclick="compareImages('card-4-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-4"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image4"
+        />
+      </div>
+      <div
+        id="card-5-parent"
+        onclick="compareImages('card-5-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-5"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image5"
+        />
+      </div>
+      <div
+        id="card-6-parent"
+        onclick="compareImages('card-6-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-6"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image6"
+        />
+      </div>
+      <div
+        id="card-7-parent"
+        onclick="compareImages('card-7-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-7"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image7"
+        />
+      </div>
+      <div
+        id="card-8-parent"
+        onclick="compareImages('card-8-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-8"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image8"
+        />
+      </div>
+      <div
+        id="card-9-parent"
+        onclick="compareImages('card-9-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-9"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image9"
+        />
+      </div>
+      <div
+        id="card-10-parent"
+        onclick="compareImages('card-10-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-10"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image10"
+        />
+      </div>
+      <div
+        id="card-11-parent"
+        onclick="compareImages('card-11-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-11"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image11"
+        />
+      </div>
+      <div
+        id="card-12-parent"
+        onclick="compareImages('card-12-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-12"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image12"
+        />
+      </div>
+      <div
+        id="card-13-parent"
+        onclick="compareImages('card-13-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-13"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image13"
+        />
+      </div>
+      <div
+        id="card-14-parent"
+        onclick="compareImages('card-14-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-14"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image14"
+        />
+      </div>
+      <div
+        id="card-15-parent"
+        onclick="compareImages('card-15-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-15"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image15"
+        />
+      </div>
+      <div
+        id="card-16-parent"
+        onclick="compareImages('card-16-parent')"
+        class="max-w-[200px]"
+      >
+        <img
+          id="card-16"
+          class="rounded-2xl object-cover opacity-0"
+          src="assets/unknownCard.jpg"
+          alt="image16"
+        />
+      </div>
+    </section>
+    <section class="max-w-fit mx-auto mt-4">
+      <button
+        class="text-4xl border border-neutral-200 rounded-2xl p-2"
+        onclick="location.reload()"
+      >
+        Reset
+      </button>
+    </section>
+  </body>
+</html>
